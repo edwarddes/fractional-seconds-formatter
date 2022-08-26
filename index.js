@@ -11,12 +11,12 @@ export default (o, c, d) => {
 
     const utils = this.$utils()
     const str = formatStr || 'YYYY-MM-DDTHH:mm:ssZ'
-    const result = str.replace(/\[([^\]]+)]|S{1,2}/g, (match) => {
+    const result = str.replace(/\[([^\]]+)]|SSS|SS|S/g, (match) => {
       switch (match) {
 	    case 'S':
-			return utils.s(this.$ms/100, 1, '0')
+			return utils.s(Math.floor(this.$ms/100), 1, '0')
 	    case 'SS':
-			return utils.s(this.$ms/10, 1, '0')
+			return utils.s(Math.floor(this.$ms/10), 2, '0')
         default:
           return match
       }
