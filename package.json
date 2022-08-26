@@ -1,0 +1,21 @@
+{
+  "name": "fractional-seconds-formatter",
+  "version": "1.0.1",
+  "description": "Simple Plugin for dayjs that adds S and SS formatter options for factional seconds",
+  "keywords": [
+    "dayjs",
+    "plugin"
+  ],
+  "homepage": "https://github.com/edwarddes/fractional-seconds-formatter",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "author": "Edward Despard",
+  "license": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "dayjs": "^1.11.5",
+  }
+}
