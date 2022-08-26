@@ -16,6 +16,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "dayjs": "^1.11.5",
+    "dayjs": "^1.11.5"
   }
 }
